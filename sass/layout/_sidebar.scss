@@ -1,0 +1,183 @@
+// ! sidebar styles
+.sidebar {
+  background-color: $color-primary;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 0 2rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  @include Responsive(tabletL) {
+    width: 24rem;
+    position: fixed;
+    height: auto;
+    z-index: 10;
+    left: -100rem;
+    overflow-y: auto;
+  }
+  &__contant {
+    width: 100%;
+    &-cross {
+      color: #fff;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+      @include Responsive(tabletL) {
+        display: flex;
+      }
+    }
+    &-head {
+      width: 100%;
+      @include centerize($justify: unset);
+      flex-direction: column;
+      padding: 2rem 0;
+      position: relative;
+      &-pic {
+        width: 75%;
+        margin-bottom: 1rem;
+        & > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & > h2 {
+        margin: 0;
+        font-size: 3rem;
+        color: white;
+      }
+    }
+    // ! sidebar items
+    &-items {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      border-bottom: 0.3rem solid black;
+      padding: 1rem 0;
+    }
+    &-item {
+      @include centerize($justify: unset);
+      gap: 0.7rem;
+      width: 80%;
+      margin: 0 auto;
+      color: $color-text;
+      opacity: 0.6;
+      transition: all 0.3s ease-in;
+      &:hover {
+        color: $color-white;
+        opacity: 1;
+        cursor: pointer;
+      }
+      &--blue {
+        width: 95%;
+        height: 4.5rem;
+        background-color: $color-secondary;
+        border-radius: 0 1rem 1rem 0;
+        @include centerize($justify: flex-end);
+        color: $color-white;
+        padding: 1.5rem;
+      }
+
+      &-icon1 {
+        width: 4.5rem;
+        height: 5rem;
+        background: url(/public/images/sidebar-slider.png) no-repeat;
+        background-size: cover;
+        background-position: 25% 0%;
+      }
+      &-icon2 {
+        @extend .sidebar__contant-item-icon1;
+        background-position: -2% 0%;
+      }
+      &-icon3 {
+        @extend .sidebar__contant-item-icon1;
+        background-position: 97% 0%;
+      }
+      &-icon4 {
+        @extend .sidebar__contant-item-icon1;
+        background-position: 49% 0%;
+      }
+      &-icon5 {
+        @extend .sidebar__contant-item-icon1;
+        background-position: 74% 0%;
+      }
+    }
+    // ! sidebar fiends
+    &-friends {
+      width: 80%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      & > h3 {
+        color: $color-white;
+        font-size: 2.3rem;
+      }
+
+      &-item {
+        width: 100%;
+        @include centerize($justify: space-between);
+        margin: 1rem 0;
+      }
+      &-profile {
+        @include centerize($justify: unset);
+        gap: 1rem;
+        color: $color-text;
+      }
+      &-pic {
+        width: 4rem;
+        height: 4rem;
+        border: 0.2rem solid silver;
+        border-radius: 50%;
+        & > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-conection {
+        width: 2rem;
+        height: 2rem;
+        @include centerize;
+      }
+      &-wifi {
+        color: $color-white;
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+      &-online {
+        width: 1rem;
+        height: 1rem;
+        background-color: $color-green;
+        border-radius: 50%;
+      }
+    }
+    // ! sidebar end
+    &-end {
+      width: 100%;
+      @include centerize($align: unset);
+      &-pic {
+        width: 90%;
+        height: auto;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: 2rem;
+        transition: all 0.3 ease-in;
+        & > img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2rem;
+        }
+        &:hover {
+          border: 0.2rem solid $color-secondary;
+          border-radius: 2rem;
+          overflow: hidden;
+          padding: 0.4rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

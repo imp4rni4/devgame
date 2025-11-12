@@ -1,0 +1,66 @@
+// ! tournaments closing
+.tournaments__closing {
+  width: 30%;
+  @include Responsive(tablet) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  background-color: $color-primary;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  &-title {
+    & > h3 {
+      color: $color-white;
+      font-weight: bold;
+    }
+    & > span {
+      color: $color-green;
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
+  }
+  &-items {
+    @include Responsive(tablet) {
+      display: flex;
+      gap: 2rem;
+    }
+    @include Responsive(phone) {
+      display: block;
+    }
+  }
+  &-item {
+    margin: 4rem 0;
+    flex-grow: 1;
+  }
+  &-teams {
+    @include centerize($justify: space-between);
+    margin: 2rem 0;
+  }
+  &-match {
+    font-size: $font-size-lg;
+    color: $color-white;
+    margin-bottom: 4rem;
+  }
+  &-btn {
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+      to right,
+      #bf953f,
+      #fcf6ba 20%,
+      #bf953f 50%,
+      #fcf6ba 80%,
+      #bf953f 100%
+    );
+    @include centerize();
+    font-weight: bold;
+    font-family: $font-poppins;
+    transition: all 0.3s ease-in;
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(to right, #fcbaba, #fff 30%, #fcf6ba 100%);
+      letter-spacing: 0.2rem;
+    }
+  }
+}

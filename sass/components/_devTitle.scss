@@ -1,0 +1,44 @@
+.devgame__title {
+  width: 100%;
+  @include centerize($justify: space-between);
+
+  &-items {
+    @include centerize($justify: unset);
+    gap: 2rem;
+  }
+  &-item {
+    color: $color-white;
+    font-size: $font-size-default;
+    font-weight: bold;
+    &.active {
+      color: $color-secondary;
+      border-top: 0.2rem solid $color-secondary;
+      padding: 1rem 0;
+    }
+  }
+  &-btns {
+    @include centerize($justify: unset);
+    gap: 2rem;
+  }
+  &-btn {
+    @include centerize();
+    color: $color-white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    position: relative;
+    &.active {
+      background-color: $color-secondary;
+    }
+  }
+  &-swiper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    &::after {
+      font-size: 2rem;
+      color: $color-white;
+      font-weight: bold;
+    }
+  }
+}

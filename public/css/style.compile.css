@@ -1,0 +1,1682 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 45%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #111a23;
+}
+
+.title__white, .title__pink {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.title__pink {
+  color: #e7059d;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+.main__page {
+  width: 82%;
+}
+@media only screen and (max-width: 75em) {
+  .main__page {
+    width: 100%;
+  }
+}
+
+.sidebar {
+  background-color: #202938;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 0 2rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 75em) {
+  .sidebar {
+    width: 24rem;
+    position: fixed;
+    height: auto;
+    z-index: 10;
+    left: -100rem;
+    overflow-y: auto;
+  }
+}
+.sidebar__contant {
+  width: 100%;
+}
+.sidebar__contant-cross {
+  color: #fff;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .sidebar__contant-cross {
+    display: flex;
+  }
+}
+.sidebar__contant-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: relative;
+}
+.sidebar__contant-head-pic {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+.sidebar__contant-head-pic > img {
+  width: 100%;
+  height: 100%;
+}
+.sidebar__contant-head > h2 {
+  margin: 0;
+  font-size: 3rem;
+  color: white;
+}
+.sidebar__contant-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 0.3rem solid black;
+  padding: 1rem 0;
+}
+.sidebar__contant-item {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.7rem;
+  width: 80%;
+  margin: 0 auto;
+  color: #7a7a7a;
+  opacity: 0.6;
+  transition: all 0.3s ease-in;
+}
+.sidebar__contant-item:hover {
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+.sidebar__contant-item--blue {
+  width: 95%;
+  height: 4.5rem;
+  background-color: #0761dc;
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  padding: 1.5rem;
+}
+.sidebar__contant-item-icon1, .sidebar__contant-item-icon5, .sidebar__contant-item-icon4, .sidebar__contant-item-icon3, .sidebar__contant-item-icon2 {
+  width: 4.5rem;
+  height: 5rem;
+  background: url(/public/images/sidebar-slider.png) no-repeat;
+  background-size: cover;
+  background-position: 25% 0%;
+}
+.sidebar__contant-item-icon2 {
+  background-position: -2% 0%;
+}
+.sidebar__contant-item-icon3 {
+  background-position: 97% 0%;
+}
+.sidebar__contant-item-icon4 {
+  background-position: 49% 0%;
+}
+.sidebar__contant-item-icon5 {
+  background-position: 74% 0%;
+}
+.sidebar__contant-friends {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar__contant-friends > h3 {
+  color: #fff;
+  font-size: 2.3rem;
+}
+.sidebar__contant-friends-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.sidebar__contant-friends-profile {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+  color: #7a7a7a;
+}
+.sidebar__contant-friends-pic {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid silver;
+  border-radius: 50%;
+}
+.sidebar__contant-friends-pic > img {
+  width: 100%;
+  height: 100%;
+}
+.sidebar__contant-friends-conection {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__contant-friends-wifi {
+  color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.sidebar__contant-friends-online {
+  width: 1rem;
+  height: 1rem;
+  background-color: #23b606;
+  border-radius: 50%;
+}
+.sidebar__contant-end {
+  width: 100%;
+  display: flex;
+  align-items: unset;
+  justify-content: center;
+}
+.sidebar__contant-end-pic {
+  width: 90%;
+  height: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 2rem;
+  transition: all 0.3 ease-in;
+}
+.sidebar__contant-end-pic > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.sidebar__contant-end-pic:hover {
+  border: 0.2rem solid #0761dc;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 5.5rem;
+}
+.header__contant {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+  position: relative;
+}
+.header__contant-menu {
+  position: absolute;
+  left: 0;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .header__contant-menu {
+    display: flex;
+  }
+}
+.header__contant-menu-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+.header__contant-search {
+  width: 44rem;
+  height: 4rem;
+  background-color: #202938;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  border-radius: 2.5rem;
+}
+@media only screen and (max-width: 62em) {
+  .header__contant-search {
+    display: none;
+  }
+}
+.header__contant-search-input {
+  width: 40rem;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 2rem;
+  border: none;
+}
+.header__contant-search-input:focus {
+  outline: none;
+}
+.header__contant-search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0761dc;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.header__contant-search-icon-2 {
+  display: none;
+}
+@media only screen and (max-width: 62em) {
+  .header__contant-search-icon-2 {
+    display: flex;
+  }
+}
+.header__contant-alarm {
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.header__contant-alarm > svg {
+  font-size: 2.5rem;
+}
+.header__contant-alarm-count {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #0761dc;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+}
+.header__contant-profile {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+.header__contant-profile > span {
+  color: #fff;
+  font-weight: bold;
+}
+.header__contant-profile-pic {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #0761dc;
+}
+.header__contant-profile-pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  width: 100%;
+}
+.slider__contant {
+  width: 100%;
+  height: 40rem;
+}
+.slider__contant > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular {
+  width: 100%;
+}
+.popular__contant {
+  width: 90%;
+  margin: 2rem auto;
+}
+.popular__contant-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+@media only screen and (max-width: 62em) {
+  .popular__contant-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.popular__contant-item {
+  width: 35rem;
+  height: 35rem;
+}
+.popular__contant-item-pic {
+  width: 100%;
+  height: 19rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #202938;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.popular__contant-item-pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.popular__contant-item-pic:hover {
+  cursor: pointer;
+  transform: translate(0, -1rem);
+}
+.popular__contant-item-pic-online, .popular__contant-item-pic-shade {
+  width: 13.7rem;
+  height: 100%;
+  background-color: #eaa525;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  transition: all 1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular__contant-item-pic-online > span, .popular__contant-item-pic-shade > span {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 900;
+}
+.popular__contant-item-pic-shade {
+  right: 1rem;
+  background-color: #ffc559;
+  z-index: 1;
+}
+.popular__contant-item-pic-active {
+  border: 0.2rem solid #0761dc;
+  height: 20rem;
+}
+.popular__contant-item-pic-active:hover > .popular__contant-item-pic-online, .popular__contant-item-pic-active:hover > .popular__contant-item-pic-shade {
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.5;
+}
+.popular__contant-item-text {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  width: 100%;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.popular__contant-item-info {
+  color: #fff;
+  width: 50%;
+}
+.popular__contant-item-name {
+  font-weight: bold;
+}
+.popular__contant-item-story {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.popular__contant-item-online {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+.popular__contant-item-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #23b606;
+  box-shadow: 0 0 0.6rem 0.1rem #23b606;
+}
+.popular__contant-item-circle-tiny {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #23b606;
+}
+.popular__contant-item-teams {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 2rem;
+}
+.popular__contant-item-team {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.popular__contant-item-team-pic {
+  width: 2rem;
+  height: 2rem;
+}
+.popular__contant-item-team-pic > img {
+  width: 100%;
+  height: 100%;
+}
+.popular__contant-item-match {
+  color: #eaa525;
+  font-weight: bold;
+}
+
+.best {
+  width: 100%;
+}
+.best__contant {
+  width: 90%;
+  margin: 0 auto;
+}
+.best__contant-streamers {
+  display: flex;
+  gap: 1rem;
+}
+.best__contant-streamer {
+  width: 19.5rem;
+  flex-grow: 1;
+}
+.best__contant-pic {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+.best__contant-number {
+  width: 5rem;
+  height: 6.5rem;
+  background: url(/public/images/number.png) no-repeat;
+  background-size: 32.1rem;
+  background-position: 0 0;
+  position: absolute;
+  top: 2rem;
+}
+.best__contant-number.n2 {
+  background-position: 22% 0;
+}
+.best__contant-number.n3 {
+  background-position: 47% 0;
+}
+.best__contant-number.n4 {
+  background-position: 73% 0;
+}
+.best__contant-number.n5 {
+  background-position: 100% 0;
+}
+.best__contant-img {
+  width: 100%;
+  height: 23rem;
+  border-radius: 2rem;
+  border: 0.5rem solid #fff;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.best__contant-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in;
+}
+.best__contant-img > img:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+.best__contant-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.best__contant-name {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.best__contant-position {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.best__contant-position-text {
+  color: #7a7a7a;
+}
+.best__contant-position-number {
+  color: #fff;
+}
+
+.tournaments {
+  width: 100%;
+}
+.tournaments__contant {
+  width: 90%;
+  margin: 1rem auto;
+}
+.tournaments__contant-sections {
+  width: 100%;
+  display: flex;
+  align-items: unset;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+@media only screen and (max-width: 62em) {
+  .tournaments__contant-sections {
+    display: block;
+  }
+}
+.tournaments__main {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media only screen and (max-width: 62em) {
+  .tournaments__main {
+    width: 100%;
+  }
+}
+.tournaments__more {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #0761dc;
+  font-weight: bold;
+  border-radius: 1.5rem;
+}
+
+.tournaments__battles {
+  padding: 1rem;
+  background-color: #202938;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: unset;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__battles {
+    display: block;
+  }
+}
+.tournaments__battles-final {
+  width: 65%;
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__battles-final {
+    width: 100%;
+  }
+}
+.tournaments__battles-final-head > h3 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.tournaments__battles-final-head > span {
+  color: #23b606;
+  font-size: 1.3rem;
+}
+.tournaments__battles-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 5rem 2rem;
+}
+.tournaments__battles-team-sward {
+  width: 3rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tournaments__battles-team-sward > img {
+  width: 100%;
+}
+.tournaments__battles-groups {
+  width: 35%;
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__battles-groups {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+.tournaments__battles-groups-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+}
+.tournaments__battles-groups-btn, .tournaments__battles-groups-name {
+  width: 18%;
+  height: 100%;
+  background-color: #0761dc;
+  color: #fff;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tournaments__battles-groups-name {
+  width: 60%;
+}
+.tournaments__battles-groups-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.tournaments__battles-groups-item {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  background-color: #111a23;
+  padding: 0 1rem;
+  border-radius: 0.7rem;
+}
+.tournaments__battles-groups-item.selected {
+  background-color: #9b061c;
+}
+.tournaments__battles-groups-item.selected .tournaments__battles-groups-number {
+  background-color: #710819;
+}
+.tournaments__battles-groups-item:hover {
+  background-color: #a41b2f;
+  cursor: pointer;
+}
+.tournaments__battles-groups-item:hover .tournaments__battles-groups-number {
+  background-color: #710819;
+}
+.tournaments__battles-groups-left {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+.tournaments__battles-groups-number {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202938;
+  border-radius: 0.7rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.tournaments__battles-groups-team {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.7rem;
+}
+.tournaments__battles-groups-team > h4 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.tournaments__battles-groups-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.tournaments__battles-groups-icon > img {
+  width: 100%;
+  height: 100%;
+}
+.tournaments__battles-groups-right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 2rem;
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__battles-groups-right {
+    justify-content: flex-end;
+  }
+}
+.tournaments__battles-groups-coins {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.7rem;
+  color: #fff;
+}
+.tournaments__battles-groups-coin {
+  width: 2rem;
+  height: 2rem;
+}
+.tournaments__battles-groups-coin > img {
+  width: 100%;
+  height: 100%;
+}
+
+.tournaments__games {
+  width: 100%;
+  height: 10rem;
+  background-color: #202938;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  padding: 0 1rem;
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__games {
+    display: none;
+  }
+}
+.tournaments__games-game {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1.5rem;
+}
+.tournaments__games-pic {
+  width: 7.5rem;
+}
+.tournaments__games-pic > img {
+  width: 100%;
+  height: 100%;
+}
+.tournaments__games-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.tournaments__games-text {
+  color: #7a7a7a;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.tournaments__games-info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tournaments__games-info::before {
+  content: "";
+  width: 7rem;
+  height: 0.1rem;
+  background-color: #7a7a7a;
+  transform: rotate(125deg);
+  display: block;
+}
+.tournaments__games-percent, .tournaments__games-shade {
+  width: 14rem;
+  height: 100%;
+  background-color: #e7059d;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Rubik", sans-serif;
+}
+.tournaments__games-percent.blue, .blue.tournaments__games-shade {
+  background-color: #0761dc;
+}
+.tournaments__games-shade {
+  right: 1rem;
+  opacity: 0.7;
+}
+.tournaments__games-shade.blue {
+  background-color: #0761dc;
+}
+
+.tournaments__closing {
+  width: 30%;
+}
+@media only screen and (max-width: 62em) {
+  .tournaments__closing {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+.tournaments__closing {
+  background-color: #202938;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.tournaments__closing-title > h3 {
+  color: #fff;
+  font-weight: bold;
+}
+.tournaments__closing-title > span {
+  color: #23b606;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+@media only screen and (max-width: 62em) {
+  .tournaments__closing-items {
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .tournaments__closing-items {
+    display: block;
+  }
+}
+.tournaments__closing-item {
+  margin: 4rem 0;
+  flex-grow: 1;
+}
+.tournaments__closing-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.tournaments__closing-match {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.tournaments__closing-btn {
+  width: 100%;
+  height: 5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, #bf953f, #fcf6ba 20%, #bf953f 50%, #fcf6ba 80%, #bf953f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in;
+}
+.tournaments__closing-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #fcbaba, #fff 30%, #fcf6ba 100%);
+  letter-spacing: 0.2rem;
+}
+
+.discount {
+  width: 100%;
+}
+.discount__contant {
+  width: 90%;
+  margin: 0 auto;
+}
+.discount__contant-items {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 48em) {
+  .discount__contant-items {
+    display: block;
+  }
+}
+.discount__contant-offer {
+  width: 90%;
+  background-color: #202938;
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem;
+}
+@media only screen and (max-width: 48em) {
+  .discount__contant-offer {
+    width: 100%;
+  }
+}
+.discount__contant-offer-off {
+  width: 23.7rem;
+  height: 6.1rem;
+  background-color: #ffef00;
+  position: absolute;
+  right: -6.8rem;
+  top: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  transform: rotate(40deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.discount__contant-offer-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.discount__contant-offer-pic:hover {
+  cursor: pointer;
+}
+.discount__contant-offer-pic:hover .discount__contant-offer-shape {
+  top: 0;
+}
+.discount__contant-offer-pic:hover .discount__contant-offer-img {
+  transform: scale(120%);
+}
+.discount__contant-offer-img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in;
+}
+.discount__contant-offer-shape {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #4375b2 39%, #a43337 100%);
+  opacity: 0.5;
+  position: absolute;
+  top: 100%;
+  transition: all 0.5s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+.discount__contant-games {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .discount__contant-games {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .discount__contant-games {
+    flex-direction: column;
+  }
+}
+.discount__contant-game {
+  width: 100%;
+  height: 24rem;
+  background-color: #202938;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+@media only screen and (max-width: 48em) {
+  .discount__contant-game {
+    height: auto;
+  }
+}
+.discount__contant-game-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.discount__contant-game-pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.discount__contant-game-text {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.discount__contant-game-play {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0761dc;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  font-size: 1.1rem;
+  box-shadow: 0 0 1.5rem 0.5rem #0761dc;
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #202938;
+  margin-top: 2rem;
+}
+.footer__contant {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__contant-pic {
+  width: 16rem;
+}
+.footer__contant-pic img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer__contant-pic h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer__contant-details {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.footer__contant-texts {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7a7a7a;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+.footer__contant-items {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+.footer__contant-item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111a23;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0 0 1rem #7a7a7a;
+  font-size: 1.8rem;
+  transition: all 0.5s ease-in;
+}
+.footer__contant-item svg {
+  transition: all 0.5s ease-in;
+}
+.footer__contant-item:hover {
+  cursor: pointer;
+  color: #0761dc;
+  transform: translate(0, 0.5rem);
+}
+.footer__contant-item:hover svg {
+  transform: rotateY(360deg);
+}
+.footer__contant-copyright {
+  color: #7a7a7a;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+.devgame__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.devgame__title-items {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 2rem;
+}
+.devgame__title-item {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.devgame__title-item.active {
+  color: #0761dc;
+  border-top: 0.2rem solid #0761dc;
+  padding: 1rem 0;
+}
+.devgame__title-btns {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 2rem;
+}
+.devgame__title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.devgame__title-btn.active {
+  background-color: #0761dc;
+}
+.devgame__title-swiper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.devgame__title-swiper::after {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dev__team-flag {
+  width: 9rem;
+  height: 9rem;
+  background-image: conic-gradient(#9b061c 25%, #e7059d 25%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2rem #0761dc;
+}
+.dev__team-flag.battles--2 {
+  width: 14.5rem;
+  height: 14.5rem;
+  background-image: conic-gradient(red 25%, #0761dc 25%);
+}
+.dev__team-flag.battles--3 {
+  background-image: conic-gradient(#eaa525 25%, #0761dc 25%);
+}
+.dev__team-flag.closing-flag {
+  width: 8rem;
+  height: 8rem;
+}
+.dev__team-flag-circle {
+  width: 95%;
+  height: 95%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #9c091c 0, #e31c3b 50%, #323676 100%);
+}
+.dev__team-flag-circle > img {
+  width: 50%;
+  object-fit: cover;
+}
+.dev__team-flag-circle.battles--2 {
+  background: radial-gradient(circle, #0658c6 0, #0c678a 50%, #000307 100%);
+}
+.dev__team-flag-circle.battles--3 {
+  background: radial-gradient(circle, #ffc559 0, #eaa525 50%, #000307 100%);
+}
+.dev__team-name {
+  width: 100%;
+}
+.dev__team-name > h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.dev__team-name.closing-flag > h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.dev__team-name::after {
+  content: "team3";
+  color: #7a7a7a;
+  font-size: 1.3rem;
+  display: block;
+  text-align: center;
+}
+.dev__team-name.closing-flag::after {
+  content: "Number 2";
+  font-size: 1.5rem;
+}
+.dev__team.closing-flag {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev__percent {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #111a23;
+  border-radius: 1.5rem;
+}
+.dev__percent-fill {
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, yellow, white);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dev__percent-fill > span {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.dev__percent.closing-percent {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.compile.css.map */

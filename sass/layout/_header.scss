@@ -1,0 +1,100 @@
+// ! header styles
+.header {
+  width: 100%;
+  height: 5.5rem;
+  &__contant {
+    @include centerize($justify: flex-end);
+    width: $main-width;
+    height: 100%;
+    margin: 0 auto;
+    gap: 2rem;
+    position: relative;
+    &-menu {
+      position: absolute;
+      left: 0;
+      display: none;
+      cursor: pointer;
+      @include Responsive(tabletL) {
+        display: flex;
+      }
+      &-icon {
+        color: $color-white;
+        font-size: 2rem;
+      }
+    }
+    &-search {
+      width: 44rem;
+      height: 4rem;
+      background-color: $color-primary;
+      @include centerize($justify: unset);
+      border-radius: 2.5rem;
+      @include Responsive(tablet) {
+        display: none;
+      }
+      &-input {
+        width: 40rem;
+        height: 100%;
+        background-color: transparent;
+        color: $color-white;
+        padding: 2rem;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      &-icon {
+        @include centerize();
+        width: 4rem;
+        height: 4rem;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        color: $color-white;
+        font-size: $font-size-sm;
+        &-2 {
+          display: none;
+          @include Responsive(tablet) {
+            display: flex;
+          }
+        }
+      }
+    }
+    &-alarm {
+      position: relative;
+      color: $color-white;
+      font-size: 2.5rem;
+      & > svg {
+        font-size: 2.5rem;
+      }
+      &-count {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $color-secondary;
+        font-size: 0.8rem;
+        @include centerize();
+        border-radius: 50%;
+        position: absolute;
+        top: -0.5rem;
+        right: 0;
+      }
+    }
+    &-profile {
+      @include centerize($justify: unset);
+      gap: 1rem;
+      & > span {
+        color: $color-white;
+        font-weight: bold;
+      }
+      &-pic {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 0.2rem solid $color-secondary;
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

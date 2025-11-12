@@ -1,0 +1,11 @@
+// ! main styles
+.main {
+  width: 100%;
+  display: flex;
+  &__page {
+    width: 82%;
+    @include Responsive(tabletL) {
+      width: 100%;
+    }
+  }
+}

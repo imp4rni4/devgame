@@ -1,0 +1,71 @@
+// ! tournaments games
+.tournaments__games {
+  width: 100%;
+  height: 10rem;
+  background-color: $color-primary;
+  border-radius: 1.5rem;
+  @include centerize($justify: flex-start);
+  overflow: hidden;
+  position: relative;
+  padding: 0 1rem;
+  @include Responsive(phone) {
+    display: none;
+  }
+  &-game {
+    @include centerize($justify: unset);
+    gap: 1.5rem;
+  }
+  &-pic {
+    width: 7.5rem;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-title {
+    color: $color-white;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  &-text {
+    color: $color-text;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+  &-info {
+    text-align: center;
+    @include centerize();
+    &::before {
+      content: "";
+      width: 7rem;
+      height: 0.1rem;
+      background-color: $color-text;
+      transform: rotate(125deg);
+      display: block;
+    }
+  }
+  &-percent {
+    width: 14rem;
+    height: 100%;
+    background-color: $color-tertiary;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    right: 0;
+    @include centerize();
+    color: $color-white;
+    font-weight: bold;
+    font-size: $font-size-title;
+    font-family: $font-rubic;
+    &.blue {
+      background-color: $color-secondary;
+    }
+  }
+  &-shade {
+    @extend .tournaments__games-percent;
+    right: 1rem;
+    opacity: 0.7;
+    &.blue {
+      background-color: $color-secondary;
+    }
+  }
+}

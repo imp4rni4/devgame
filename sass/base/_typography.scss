@@ -1,0 +1,9 @@
+.title__white {
+  font-size: $font-size-lg;
+  color: $color-white;
+  font-weight: bold;
+}
+.title__pink {
+  @extend .title__white;
+  color: $color-tertiary;
+}
