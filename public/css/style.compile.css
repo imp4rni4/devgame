@@ -478,7 +478,7 @@ body {
 .sidebar__contant-item-icon1, .sidebar__contant-item-icon5, .sidebar__contant-item-icon4, .sidebar__contant-item-icon3, .sidebar__contant-item-icon2 {
   width: 4.5rem;
   height: 5rem;
-  background: url(/public/images/sidebar-slider.png) no-repeat;
+  background: url(public/images/sidebar-slider.png) no-repeat;
   background-size: cover;
   background-position: 25% 0%;
 }
